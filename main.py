@@ -8,7 +8,7 @@ class Zadanie: #Klasa, która dostaje tytuł zadania, termin i status czy wykona
     def __init__(self, tytul, termin, status="niezrobione"):
         self.tytul = tytul
         self.termin = termin
-        self.status = statusgi
+        self.status = status
 
     def to_dict(self): #konwetuje zadanie na słownik, aby było zapisane w JSONie
         return {"tytul": self.tytul, "termin": self.termin, "status": self.status}
